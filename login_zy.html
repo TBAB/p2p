@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="styles/css/login_zy.css">
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="login_zy.html">登录</a></li>
+                <li><a href="register_zy.html">快速注册</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li >用户登录 </li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+
+<!--主体-->
+<main class="el-main container">
+    <div class="panel panel-default">
+        <div class="panel-heading">用户登录</div>
+        <div class="panel-body">
+            <form class="form-horizontal" id="defaultForm">
+                <p class="col-sm-offset-4">请输入用户名和密码</p>
+                <div class="form-group">
+                    <label for="inputEmail3" class=" col-sm-4 control-label">用户名</label>
+                    <div class="col-sm-3">
+                        <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="请输入用户名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-4 control-label">密码</label>
+                    <div class="col-sm-3">
+                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-offset-1  col-sm-offset-4  col-sm-10">
+                        <button type="submit" class="btn btn-success">登录</button>
+                        <a href="">忘记密码</a><a href="">马上注册</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+<!--表单验证-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#defaultForm')
+            .bootstrapValidator({
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+                    username: {
+                        validators: {
+                            notEmpty: {
+                                message: '用户名不能为空'
+                            },
+                            stringLength: {
+                                min: 4,
+                                max: 8,
+                                message: '用户名为4-8位'
+                            }
+                        }
+                    },
+
+                    password: {
+                        validators: {
+                            notEmpty: {
+                                message: '密码不能为空'
+                            }
+                        }
+                    }
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent form submission
+                e.preventDefault();
+
+                // Get the form instance
+                var $form = $(e.target);
+
+                // Get the BootstrapValidator instance
+                var bv = $form.data('bootstrapValidator');
+
+                // Use Ajax to submit form data
+                $.post($form.attr('action'), $form.serialize(), function(result) {
+                    console.log(result);
+                }, 'json');
+            });
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>实名认证</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="styles/css/realAuth_zy.css">
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p>尊敬的 <span>小强</span> 你好 !</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="register_zy.html">注册</a></li>
+                <li><a href="login_zy.html">快速登录</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="index_withoutLogin_zy.html">首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="invest_zy.html">我要投资</a></li>
+                <li><a href="borrow_zy.html">我要借款</a></li>
+                <li class="active"><a href="personal_zy.html">个人中心</a></li>
+                <li><a href="#">新手指引</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体-->
+<main class="el-main">
+    <div class="container">
+        <div class="row">
+            <!--左边部分-->
+            <div class="col-sm-3">
+                <ul>
+                    <li><a href="">投资项目</a></li>
+                    <li>
+                        <a href="">借款项目</a>
+                        <ul class="leftNav">
+                            <li><a href="bid_request_list_zy.html">借款项目</a></li>
+                            <li><a href="">借款明细</a></li>
+                        </ul>
+                    </li>
+                    <li class="select">
+                        <a href="">我的账户</a>
+                        <ul class="leftNav">
+                            <li><a href="">账户信息</a></li>
+                            <li class="point"><a href="">实名认证</a></li>
+                            <li><a href="">银行卡管理</a></li>
+                            <li><a href="">登录记录</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">资产详情</a>
+                        <ul class="leftNav">
+                            <li ><a href="accountflow_list_zy.html">账户流水</a></li>
+                            <li><a href="">充值明细</a></li>
+                            <li><a href="">提现记录</a></li>
+                            <li><a href="">收款明细</a></li>
+                        </ul>
+                    </li>
+                    <li ><a href="userInfo_zy.html">个人资料</a></li>
+                </ul>
+            </div>
+            <!--右边部分-->
+            <div class="col-sm-9">
+                <div class="panel panel-default">
+                    <div class="panel-heading">个人资料</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" id="defaultForm">
+                            <div class="form-group">
+                                <label class="col-xs-offset-2 col-sm-offset-0 col-xs-3 col-sm-3 control-label">用户名</label>
+                                <div class=" col-sm-offset-0  col-xs-7 col-sm-9">
+                                    <p class="form-control-static">xiaoq</p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">姓名</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">性别</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control">
+                                        <option>男</option>
+                                        <option>女</option>
+                                        <option>其他</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">证件类型</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control">
+                                        <option>居民身份证</option>
+                                        <option>港澳台回乡证</option>
+                                        <option>外国护照</option>
+                                        <option>军官证</option>
+                                        <option>驾驶证</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3"  class="col-sm-3 control-label">证件号码</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="number" class="form-control" id="inputPassword3" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3"  class="col-sm-3 control-label">出生日期</label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="birthday" class="form-control" id="inputPassword4" placeholder="">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">证件地址</label>
+                                <div class="col-sm-7">
+                                    <textarea class="form-control" name="address" rows="1"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">证件地址</label>
+                                <div class="col-sm-8">
+                                    <div class="row clearfix">
+                                        <p >请点击“选择文件”,选择证件的正反两面照片。</p>
+                                        <input class="pull-left col-sm-4 " type="file" value="上传正面">
+                                        <input class="pull-left col-sm-4" type="file" value="上传反面">
+                                        <button id="demo" type="button" class="btn btn-danger" data-container="body" data-toggle="popover" data-placement="bottom"
+                                                data-html="true" title="<img src='images/upload_source_2.jpg' height='100' width='180'><hr/><img src='images/upload_source_2_1.jpg' height='100' width='180'>">
+                                            查看样板
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <img src="" class="col-sm-4 col-xs-6 col-xs-offset-2 col-sm-offset-0" alt="">
+                                        <img src="" class="col-sm-4 col-xs-6 col-xs-offset-2 col-sm-offset-0" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-xs-offset-4  col-sm-offset-4 col-sm-8">
+                                    <button type="submit" class="btn btn-primary">保存数据</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+<script type="text/javascript">
+
+//    弹出框
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
+$('#demo').popover(options);
+
+    <!--表单验证-->
+    $(document).ready(function() {
+        $('#defaultForm')
+            .bootstrapValidator({
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+
+                    username: {
+                        validators: {
+                            notEmpty: {
+                                message: '用户名不能为空'
+                            }
+                        }
+                    },
+
+
+                    number: {
+                        validators: {
+                            notEmpty: {
+                                message: '证件号不能为空'
+                            },
+                            stringLength: {
+                                min: 18,
+                                max: 18,
+                                message: '请输入正确的证件号码'
+                            }
+                        }
+                    },
+
+                    birthday: {
+                        validators: {
+                            notEmpty: {
+                                message: '生日不能为空'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: '联系电话不能为空'
+                            }
+                        }
+                    },
+                    address: {
+                        validators: {
+                            notEmpty: {
+                                message: '地址不能为空'
+                            },
+
+                            stringLength: {
+                                min: 10,
+                                message: '请精确到街道'
+                            }
+                        }
+                    },
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent form submission
+                e.preventDefault();
+
+                // Get the form instance
+                var $form = $(e.target);
+
+                // Get the BootstrapValidator instance
+                var bv = $form.data('bootstrapValidator');
+
+                // Use Ajax to submit form data
+                $.post($form.attr('action'), $form.serialize(), function(result) {
+                    console.log(result);
+                }, 'json');
+            });
+    });
+</script>
+</body>
+</html>

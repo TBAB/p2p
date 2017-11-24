@@ -1,0 +1,98 @@
+@charset "utf-8";
+.col-sm-9 {
+  margin-bottom: 20px;
+}
+.col-sm-9 > div:first-of-type {
+  padding: 25px;
+  background-color: #F4F8FA;
+  border-left: 2px solid #0099DD;
+  margin-bottom: 40px;
+}
+.col-sm-9 > div:first-of-type h3 {
+  color: #0099DD ;
+}
+.col-sm-9 > div:nth-of-type(2) {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+.col-sm-9 > div:nth-of-type(2) h3 span {
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+.col-sm-9 form {
+  position: relative;
+}
+.col-sm-9 form .form-group {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.col-sm-9 form .form-group .input-group {
+  padding-left: 15px;
+}
+.col-sm-9 form .form-group .col-sm-3 .radio-inline {
+  padding-left: 15px;
+  padding-top: 0px;
+}
+.col-sm-9 form .form-group .col-sm-3 .radio-inline input {
+  display: inline-block;
+}
+.col-sm-9 form .form-group label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.col-sm-9 form .form-group div p {
+  padding: 0px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.col-sm-9 form .form-group .row {
+  padding-left: 10px;
+}
+.col-sm-9 form .form-group .row p {
+  color: #10adff;
+  padding-left: 0px;
+}
+.col-sm-9 form .form-group .row img {
+  height: 100%;
+  height: 120px;
+  display: inline-block;
+  border: solid 1px #ccc;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.col-sm-9 form .form-group .row input {
+  height: 30px;
+  border: solid 1px #ccc;
+  padding: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.col-sm-9 form .form-group .row button {
+  height: 30px;
+  padding: 4px 15px;
+  margin-bottom: 20px;
+}
+.col-sm-9 form .expenses {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 20px #ddd;
+  padding: 20px 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+@media all and (max-width: 768px) {
+  .col-sm-9 form .expenses {
+    top: 256px;
+    right: 0px;
+    padding: 0px 20px;
+  }
+  .col-sm-9 form .expenses p {
+    margin-bottom: 5px;
+  }
+}
+.col-sm-9 textarea {
+  resize: none;
+}

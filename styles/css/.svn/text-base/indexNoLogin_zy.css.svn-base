@@ -1,0 +1,198 @@
+@charset "utf-8";
+.el-header {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.el-header .container .navbar-header a {
+  color: #ffffff;
+}
+.el-header .container .navbar-header a i {
+  font-size: 18px;
+}
+.el-header .container .navbar-header a span {
+  font-size: 24px;
+  font-style: italic;
+}
+.el-header .container .collapse .navbar-nav li a {
+  color: #ffffff;
+}
+.el-header .container .collapse .navbar-nav li a:hover {
+  color: #0980ff;
+  text-decoration: underline;
+}
+.el-nav {
+  margin-bottom: 0px;
+}
+.el-nav .container .navbar-header .navbar-brand {
+  display: inline-block;
+  padding-top: 22px;
+  height: 80px;
+}
+.el-nav .container .navbar-header .navbar-brand > img {
+  width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li {
+  min-width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a:hover {
+  color: #0a91ff;
+  background-color: #e8e8e8;
+}
+#carousel-example-generic .carousel-inner .item img {
+  width: 100%;
+}
+.el-main {
+  margin-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.el-main .row .col-sm-4 #three1 {
+  width: 100%;
+  height: 70px;
+  padding-left: 80px;
+  margin-top: 10px;
+  background-image: url("../../images/feature01.png");
+  background-repeat: no-repeat;
+  list-style: none;
+}
+.el-main .row .col-sm-4 #three1 li:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.el-main .row .col-sm-4 #three1 li:last-of-type {
+  color: #9d9d9d;
+}
+.el-main .row .col-sm-4 #three2 {
+  width: 100%;
+  height: 70px;
+  margin-top: 10px;
+  padding-left: 80px;
+  background-image: url("../../images/feature02.png");
+  background-repeat: no-repeat;
+  list-style: none;
+}
+.el-main .row .col-sm-4 #three2 li:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.el-main .row .col-sm-4 #three2 li:last-of-type {
+  color: #9d9d9d;
+}
+.el-main .row .col-sm-4 #three3 {
+  width: 100%;
+  height: 70px;
+  padding-left: 80px;
+  margin-top: 10px;
+  background-image: url("../../images/feature03.png");
+  background-repeat: no-repeat;
+  list-style: none;
+}
+.el-main .row .col-sm-4 #three3 li:first-of-type {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.el-main .row .col-sm-4 #three3 li:last-of-type {
+  color: #9d9d9d;
+}
+.el-main .page-header {
+  margin-top: 10px;
+  border-bottom: 1px solid #dedede;
+  height: 45px;
+}
+.el-main .page-header span {
+  height: 44px;
+  text-align: center;
+  float: left;
+  font-size: 26px;
+  color: #1175ff;
+  font-weight: bold;
+  border-bottom: 3px solid #1175ff;
+}
+.el-main .page-header a {
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  display: inline-block;
+  float: right;
+  color: #0d67ff;
+}
+.el-main .page-header a:hover {
+  color: #365980;
+}
+.el-main .table-responsive .table {
+  margin-bottom: 0px;
+}
+.el-main .table-responsive .table thead tr th {
+  font-size: 18px;
+  color: #9e9d9d;
+}
+.el-main .table-responsive p {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #c70000;
+  text-align: center;
+}
+.el-main .table-responsive p:hover {
+  background-color: #eeeeee;
+}
+.el-main .container {
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.el-main .container ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.el-main .container ul li {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px dashed #ddd;
+}
+.el-main .container ul li a {
+  color: #464646;
+}
+.el-main .container ul li a:hover {
+  color: #0a91ff;
+}
+.el-footer {
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #f8f8f8;
+}
+.el-footer .row .col-sm-8 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-8 p {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.el-footer .row .col-sm-2 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-2 p {
+  font-size: 16px;
+  text-align: center;
+}
+.el-footer .row img {
+  width: 140px;
+  height: 70px;
+}
+.el-footer .row #weixin {
+  width: 150px;
+  height: 150px;
+}

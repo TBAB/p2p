@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>我要投资</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/css/invest_zy.css">
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p>尊敬的 <span>小强</span> 你好 !</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="#">账户充值</a></li>
+                <li><a href="#">注销</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="index_withoutLogin_zy.html">首页 <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="invest_zy.html">我要投资</a></li>
+                <li><a href="borrow_zy.html">我要借款</a></li>
+                <li><a href="personal_zy.html">个人中心</a></li>
+                <li><a href="#">新手指引</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体-->
+<main class="el-main container">
+    <h4>投资列表</h4>
+    <p >
+        标的状态 &emsp;&emsp;
+        <span class="btn-group">
+            <button type="button" class="btn btn-default ">全部</button>
+            <button type="button" class="btn btn-default">招标中</button>
+            <button type="button" class="btn btn-default">还款中</button>
+         </span>
+    </p>
+    <table class="table table-hover">
+       <thead>
+            <tr class="thead">
+                <td>借款人</td>
+                <td>借款概要</td>
+                <td>年利率</td>
+                <td>金额</td>
+                <td>还款方式</td>
+                <td>进度</td>
+                <td>操作</td>
+            </tr>
+       <tbody >
+           <tr class="tbody">
+               <td>张三</td>
+               <td>给我2000度过难关</td>
+               <td><span>10.00%</span></td>
+               <td><span>2,000.00</span></td>
+               <td>	按月分期还款</td>
+               <td>100.00%</td>
+               <td>
+                   <button type="button" class="btn btn-danger">查看</button>
+               </td>
+           </tr>
+       </tbody>
+       </thead>
+    </table>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+</body>
+</html>

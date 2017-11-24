@@ -1,0 +1,14 @@
+/**
+ * Created by zhaoyang on 2017/11/6.
+ */
+$.fn.serializeJSON=function () {
+    var dataJSON={};
+    var paramArr=$(this).serializeArray();
+    for(var i=0;i<paramArr.length;++i){
+        var num=paramArr[i].name;
+        dataJSON[num]=paramArr[i].value;
+
+    }
+
+    return dataJSON
+}

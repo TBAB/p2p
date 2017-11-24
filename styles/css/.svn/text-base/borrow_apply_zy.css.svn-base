@@ -1,0 +1,240 @@
+@charset "utf-8";
+.bold {
+  font-weight: bold;
+}
+.el-header {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.el-header .container .navbar-header a {
+  color: #ffffff;
+}
+.el-header .container .navbar-header a i {
+  font-size: 18px;
+}
+.el-header .container .navbar-header a span {
+  font-size: 24px;
+  font-style: italic;
+}
+.el-header .container .navbar-header p {
+  font-size: 20px;
+  color: #eeeeee;
+  margin-bottom: 0px;
+  height: 50px;
+  line-height: 50px;
+}
+.el-header .container .navbar-header p span {
+  color: #10adff;
+}
+.el-header .container .collapse .navbar-nav li a {
+  color: #ffffff;
+}
+.el-header .container .collapse .navbar-nav li a:hover {
+  color: #10adff;
+  text-decoration: underline;
+}
+.el-nav {
+  margin-bottom: 0px;
+}
+.el-nav .container .navbar-header .navbar-brand {
+  display: inline-block;
+  padding-top: 22px;
+  height: 80px;
+}
+.el-nav .container .navbar-header .navbar-brand > img {
+  width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li {
+  min-width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a:hover {
+  color: #0a91ff;
+  background-color: #e8e8e8;
+}
+.el-main {
+  margin-top: 10px;
+}
+.el-main .container .row .col-sm-3 ul {
+  padding-left: 0px;
+  list-style: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.el-main .container .row .col-sm-3 ul li {
+  line-height: 44px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f6f6f6;
+}
+.el-main .container .row .col-sm-3 ul li a {
+  padding: 5px 10px;
+}
+.el-main .container .row .col-sm-3 ul li a:hover {
+  text-decoration: none;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #ccc;
+  border-radius: 0px;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav .point {
+  background-color: #10adff;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav .point a {
+  color: #fff;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav li {
+  background-color: #fff;
+  padding-left: 40px;
+  border: none;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav li:hover {
+  background-color: #10adff ;
+}
+.el-main .container .row .col-sm-3 ul li .leftNav li:hover a {
+  color: #fff;
+}
+.el-main .container .row .col-sm-3 ul li:last-of-type {
+  border-bottom: none;
+}
+.el-main .container .row .col-sm-3 > ul > .select {
+  background-color: #337AB7;
+}
+.el-main .container .row .col-sm-3 > ul > .select > a {
+  color: #fff;
+}
+.el-main .container .row .col-sm-9 {
+  margin-bottom: 20px;
+}
+.el-main .container .row .col-sm-9 > div:first-of-type {
+  padding: 25px;
+  background-color: #F4F8FA;
+  border-left: 2px solid #0099DD;
+  margin-bottom: 40px;
+}
+.el-main .container .row .col-sm-9 > div:first-of-type h3 {
+  color: #0099DD ;
+}
+.el-main .container .row .col-sm-9 > div:nth-of-type(2) {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+.el-main .container .row .col-sm-9 > div:nth-of-type(2) h3 span {
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+.el-main .container .row .col-sm-9 form {
+  position: relative;
+}
+.el-main .container .row .col-sm-9 form .form-group {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.el-main .container .row .col-sm-9 form .form-group .input-group {
+  padding-left: 15px;
+}
+.el-main .container .row .col-sm-9 form .form-group .col-sm-3 .radio-inline {
+  padding-left: 15px;
+  padding-top: 0px;
+}
+.el-main .container .row .col-sm-9 form .form-group .col-sm-3 .radio-inline input {
+  display: inline-block;
+}
+.el-main .container .row .col-sm-9 form .form-group label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.el-main .container .row .col-sm-9 form .form-group div p {
+  padding: 0px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.el-main .container .row .col-sm-9 form .form-group .row {
+  padding-left: 10px;
+}
+.el-main .container .row .col-sm-9 form .form-group .row p {
+  color: #10adff;
+  padding-left: 0px;
+}
+.el-main .container .row .col-sm-9 form .form-group .row img {
+  height: 100%;
+  height: 120px;
+  display: inline-block;
+  border: solid 1px #ccc;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.el-main .container .row .col-sm-9 form .form-group .row input {
+  height: 30px;
+  border: solid 1px #ccc;
+  padding: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.el-main .container .row .col-sm-9 form .form-group .row button {
+  height: 30px;
+  padding: 4px 15px;
+  margin-bottom: 20px;
+}
+.el-main .container .row .col-sm-9 form .expenses {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 20px #ddd;
+  padding: 20px 30px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+@media all and (max-width: 768px) {
+  .el-main .container .row .col-sm-9 form .expenses {
+    top: 256px;
+    right: 0px;
+    padding: 0px 20px;
+  }
+  .el-main .container .row .col-sm-9 form .expenses p {
+    margin-bottom: 5px;
+  }
+}
+.el-main .container .row .col-sm-9 textarea {
+  resize: none;
+}
+.el-footer {
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #f8f8f8;
+}
+.el-footer .row .col-sm-8 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-8 p {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.el-footer .row .col-sm-2 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-2 p {
+  font-size: 16px;
+  text-align: center;
+}
+.el-footer .row img {
+  width: 140px;
+  height: 70px;
+}
+.el-footer .row #weixin {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,20 @@
+
+  [{
+    "username":"老李",
+    "sex":"男",
+    "department":"前端",
+    "number":"110"
+  },{
+    "username":"老王",
+    "sex":"男",
+    "department":"前端",
+    "number":"911"
+  },{
+    "username":"小孙",
+    "sex":"女",
+    "department":"前端",
+    "number":"121"
+  }]
+
+
+

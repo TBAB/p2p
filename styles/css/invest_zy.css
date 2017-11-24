@@ -1,0 +1,119 @@
+@charset "utf-8";
+.el-header {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.el-header .container .navbar-header a {
+  color: #ffffff;
+}
+.el-header .container .navbar-header a i {
+  font-size: 18px;
+}
+.el-header .container .navbar-header a span {
+  font-size: 24px;
+  font-style: italic;
+}
+.el-header .container .navbar-header p {
+  font-size: 20px;
+  color: #eeeeee;
+  margin-bottom: 0px;
+  height: 50px;
+  line-height: 50px;
+}
+.el-header .container .navbar-header p span {
+  color: #10adff;
+}
+.el-header .container .collapse .navbar-nav li a {
+  color: #ffffff;
+}
+.el-header .container .collapse .navbar-nav li a:hover {
+  color: #10adff;
+  text-decoration: underline;
+}
+.el-nav {
+  margin-bottom: 0px;
+}
+.el-nav .container .navbar-header .navbar-brand {
+  display: inline-block;
+  padding-top: 22px;
+  height: 80px;
+}
+.el-nav .container .navbar-header .navbar-brand > img {
+  width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li {
+  min-width: 80px;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  font-size: 18px;
+  text-align: center;
+}
+.el-nav .container .navbar-collapse .navbar-nav li a:hover {
+  color: #0a91ff;
+  background-color: #e8e8e8;
+}
+.el-main h4 {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.el-main p {
+  color: #717171;
+}
+.el-main p .btn-group button {
+  padding: 5px 20px;
+}
+.el-main .table {
+  margin-top: 20px;
+  height: 300px;
+}
+.el-main .table .thead {
+  border-bottom: 2px solid #d4d4d4;
+}
+.el-main .table .thead td {
+  font-weight: bold;
+  font-size: 16px;
+  color: #858585;
+}
+.el-main .table .tbody {
+  font-size: 16px;
+  height: 40px;
+}
+.el-main .table .tbody td {
+  line-height: 40px;
+}
+.el-main .table .tbody td span {
+  color: #60b0f5;
+}
+.el-footer {
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #f8f8f8;
+}
+.el-footer .row .col-sm-8 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-8 p {
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+.el-footer .row .col-sm-2 {
+  padding-right: 0px;
+}
+.el-footer .row .col-sm-2 p {
+  font-size: 16px;
+  text-align: center;
+}
+.el-footer .row img {
+  width: 140px;
+  height: 70px;
+}
+.el-footer .row #weixin {
+  width: 150px;
+  height: 150px;
+}

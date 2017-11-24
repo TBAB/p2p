@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>充值明细</title>
+    <!-- 2.bootstrap引入 -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- 3.自定样式 -->
+    <link rel="stylesheet" type="text/css" href="styles/css/index.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/personal_gzq.css">
+    <link rel="stylesheet" type="text/css" href="styles/css/recharge_list_gzq.css">
+</head>
+<body>
+    <!-- 页头 -->
+    <header class="el-header navbar-inverse">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">登录</a></li>
+		        <li><a href="#" class="el-username">小强</a></li>
+		        <li><a href="#">充值</a></li>
+		        <li><a href="#">Write off</a></li>
+		        <li><a href="#">帮助</a></li>
+		        <li><a href="#">客服</a></li>
+		        <li class="dropdown">
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li class="hidden-xs" ><a href="#" id="contectUs"  data-toggle="tooltip" data-placement="bottom" title="<img src='images/wx.jpg'>">Separated link</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div>
+		  </div>
+    </header>
+    <!-- 顶部导航 -->
+    <nav class="el-nav navbar-default">
+		  <div class="container"> 
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		      	<img src="images/logo.svg">
+		      </a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+		      <ul class="nav navbar-nav">
+		        <li><a href="http://localhost:8080/">首页<span class="sr-only">(current)</span></a></li>
+		        <li><a href="#">我要投资</a></li>
+		        <li><a href="#">我要借款</a></li>
+		        <li class="active"><a href="http://localhost:8080/personal_gzq.html">个人中心</a></li>
+		        <li><a href="#">新手指引</a></li>
+		        <li><a href="#">关于我们</a></li>
+		      </ul>
+		    </div>
+		  </div>
+	</nav>
+	<!-- 主内容 -->
+	<div class="el-mainConnect container clearfix">
+		<div class="row">
+			<!-- 左侧菜单 -->
+			<div class="col-sm-3">
+				<ul>
+				  <li>
+				  	<a href="#">投资项目</a>
+				  </li>
+				  <li>
+				  	<a href="#">项目借款</a>
+				  	<ul>
+				  		<li><a href="#">借款项目</a></li>
+				  		<li><a href="#">还款明细</a></li>
+				  	</ul>
+				  </li>
+				  <li>
+				  	<a href="#">我的账户</a>
+				  	<ul>
+				  		<li><a href="#">账户信息</a></li>
+				  		<li><a href="#">实名认证</a></li>
+				  		<li><a href="#">银行卡管理</a></li>
+				  		<li><a href="#">登录记录</a></li>
+				  	</ul>
+				  </li>
+				  <li>
+				  	<a href="#">资产详情</a>
+				  	<ul>
+				  		<li><a href="#">账户流水</a></li>
+				  		<li class="pay"><a href="#">充值明细</a></li>
+				  		<li><a href="http://localhost:8080/money_withdraw_list_gzq.html">提现记录</a></li>
+				  		<li><a href="#">收款明细</a></li>
+				  	</ul>
+				  </li>
+				  <li>
+				  	<a href="#">个人资料</a>
+				  </li>
+				</ul>
+			</div>
+			<!-- 右侧功能页面 -->
+			<div class="col-sm-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span class="pull-left">充值明细</span>
+						<div class="pull-right btn btn-danger btn-sm">账户充值</div>
+						<div class="clearfix"></div>
+					</div>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>充值时间</th>
+								<th>充值金额</th>
+								<th>充值状态</th>
+								<th>备注</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>2015-03-11 10:45:10</td>
+								<td>500.00</td>
+								<td><span class="pay-sucess">充值成功</span></td>
+								<td>线下充值500</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+    <!-- 页脚 -->
+    <footer class="el-footer container-fluid">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-8">
+    				<p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+    				<p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+    				<p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+    				<p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+    				<p>
+    					<a href="#">蜀ICP备14030149号-1</a>
+    					<a href="#">蜀公网安备510114990541</a>
+    				</p>
+    			</div>
+    			<!-- 官方微博 -->
+    			<div class="col-sm-2">
+    				<p>官方微博:</p>
+    				<p>
+    					<img src="images/sina.png">
+    					<img src="images/tecent.png">
+    				</p>
+    			</div>
+    			<!-- 微信 -->
+    			<div class="col-sm-2">
+    				<p>官方微信:</p>
+    				<p>
+    					<img src="images/wx.jpg">
+    				</p>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>

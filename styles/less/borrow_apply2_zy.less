@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+.col-sm-9{
+  //上
+  &>div:first-of-type{
+    padding: 25px;
+    background-color: #F4F8FA;
+    border-left:2px solid #0099DD;
+    margin-bottom: 40px;
+    h3{
+      color:#0099DD ;
+    }
+  }
+
+  //标题
+  &>div:nth-of-type(2){
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 20px;
+    h3{
+      span{
+        font-size: 16px;
+        padding-bottom: 3px;
+      }
+    }
+  }
+
+  //表单
+  form{
+    position: relative;
+    .form-group{
+      margin:0px;
+      margin-bottom: 10px;
+
+      .input-group{
+        padding-left: 15px;
+      }
+
+      .col-sm-3{
+        .radio-inline{
+          padding-left: 15px;
+          padding-top: 0px;
+          input{
+            display: inline-block;
+
+
+          }
+        }
+      }
+      label{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+      }
+      div{
+        p{
+          padding: 0px;
+          margin-top: 10px;
+          padding-left: 10px;
+        }
+      }
+      .row{
+        padding-left: 10px;
+        p{
+          color:#10adff;
+          padding-left: 0px;
+        }
+        img{
+          height: 100%;
+          height: 120px;
+          display: inline-block;
+          border: solid 1px #ccc;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+
+        input{
+          height: 30px;
+          border: solid 1px #ccc;
+          padding: 0px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+
+        button{
+          height: 30px;
+          padding: 4px 15px;
+          margin-bottom: 20px;
+        }
+
+      }
+    }
+
+    .expenses{
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 20px #ddd;
+      padding: 20px 30px;
+      position: absolute;
+      top:50px;
+      right: 50px;
+      @media all and (max-width: 768px) {
+        top:256px;
+        right: 0px;
+        padding: 0px 20px;
+        p{
+          margin-bottom: 5px;
+        }
+      }
+
+    }
+
+  }
+  margin-bottom: 20px;
+
+
+  textarea{
+    resize: none;
+  }
+}

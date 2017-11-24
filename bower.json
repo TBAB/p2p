@@ -1,0 +1,22 @@
+{
+  "name": "p2p",
+  "authors": [
+    "TBAB <32060983+TBAB@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "echarts": "2.2.7",
+    "artTemplate": "3.1.0"
+  }
+}

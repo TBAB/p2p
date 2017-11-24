@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/public_offcanvas.js"></script>
+    <link rel="stylesheet" href="styles/css/personal_zy.css">
+    <script src="scripts/echarts-all.js"></script>
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p>尊敬的 <span>小强</span> 你好 !</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">快速登录</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="index_withoutLogin_zy.html">首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="invest_zy.html">我要投资</a></li>
+                <li><a href="borrow_zy.html">我要借款</a></li>
+                <li class="active"><a href="personal_zy.html">个人中心</a></li>
+                <li><a href="#">新手指引</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体-->
+<main class="el-main">
+    <div class="container">
+        <div class="row offcanvas   offcanvas-left">
+            <!--左边导航-->
+            <div class="col-sm-3 offcanvas-aside">
+                <ul>
+                    <li><a href="">投资项目</a></li>
+                    <li>
+                        <a href="">借款项目</a>
+                        <ul class="leftNav">
+                            <li><a href="bid_request_list_zy.html">借款项目</a></li>
+                            <li><a href="">借款明细</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">我的账户</a>
+                        <ul class="leftNav">
+                            <li><a href="">账户信息</a></li>
+                            <li><a href="">实名认证</a></li>
+                            <li><a href="">银行卡管理</a></li>
+                            <li><a href="">登录记录</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">资产详情</a>
+                        <ul class="leftNav">
+                            <li ><a href="accountflow_list_zy.html">账户流水</a></li>
+                            <li><a href="">充值明细</a></li>
+                            <li><a href="">提现记录</a></li>
+                            <li><a href="">收款明细</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="userInfo_zy.html">个人资料</a></li>
+                </ul>
+            </div>
+
+            <!--右边部分-->
+            <div class="col-sm-9 offcanvas-content">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">基本信息</a></li>
+                    <li role="presentation"><a href="#shouyi" aria-controls="shouyi" role="tab" data-toggle="tab">收益详情</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <button class="tab">
+                        <i class="fa fa-hand-o-right" ></i>
+                    </button>
+
+                        <ul>
+                            <li>
+                                <p class="pull-left">
+                                    <img src="images/head_icon.jpg" alt="">
+                                </p>
+                                <div class="pull-left">
+                                    <p>昵 称：小码哥教育</p>
+                                    <p>用户名：小强</p>
+                                    <p>最后登录时间：2016-10-25 15:30:10</p>
+                                </div>
+                            </li>
+                            <li class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-4">总金额:&emsp;<span>10000元</span></div>
+                                    <div class="col-sm-4">可用金额:&emsp;<span>8000元</span></div>
+                                    <div class="col-sm-4">冻结金额:&emsp;<span>2000元</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3"></div>
+                                    <div class="col-xs-3 text-right">
+                                        <button type="button" class="btn btn-primary">账户充值</button>
+                                    </div>
+                                    <div class="col-xs-3">
+                                        <button type="button" class="btn btn-danger">账户体现</button>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="rightBottom clearfix">
+                                            <img class="pull-left" src="images/shiming.png" alt="">
+                                            <p class="pull-left bold" >实名认证</p>
+                                            <p class="pull-left" >未认证&emsp;<a>马上认证</a></p>
+                                        </div>
+                                        <p>实名认证之后才能在平台投资</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="rightBottom clearfix">
+                                            <img class="pull-left" src="images/baozhan.jpg" alt="">
+                                            <p class="pull-left bold" >VIP会员</p>
+                                            <p class="pull-left" >普通用户&emsp;<a> 查看</a></p>
+                                        </div>
+                                        <p>VIP会员，让你更快捷的投资</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="rightBottom clearfix">
+                                            <img class="pull-left" src="images/shouji.jpg" alt="">
+                                            <p class="pull-left bold" >手机认证</p>
+                                            <p class="pull-left" >已认证&emsp;<a>查看</a></p>
+                                        </div>
+                                        <p>可以收到系统操作信息,并增加使用安全性</p>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="rightBottom clearfix">
+                                            <img class="pull-left" src="images/youxiang.jpg" alt="">
+                                            <p class="pull-left bold" >邮箱认证</p>
+                                            <p class="pull-left" >已认证&emsp;<a> 查看</a></p>
+                                        </div>
+                                        <p>您可以设置邮箱来接收重要信息</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul></div>
+                    <div role="tabpanel" class="tab-pane" id="shouyi">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+<script>
+
+    $('#shouyi').css('width',$('#shouyi').width())
+    var myChart = echarts.init(document.getElementById('shouyi'));
+
+    var option = {
+        title : {
+            text: '您的近期收益来源来源',
+            subtext: '',
+            x:'center'
+        },
+        tooltip : {
+            trigger: 'item',
+            formatter: "{a} <br/>{b} : {c} ({d}%)"
+        },
+        legend: {
+            orient : 'vertical',
+            x : 'left',
+            data:['工资','余额宝','股票','基金','理财产品']
+        },
+        toolbox: {
+            show : false,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: false},
+                magicType : {
+                    show: true,
+                    type: ['pie', 'funnel'],
+                    option: {
+                        funnel: {
+                            x: '25%',
+                            width: '50%',
+                            funnelAlign: 'left',
+                            max: 1548
+                        }
+                    }
+                },
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
+        calculable : true,
+        series : [
+            {
+                name:'收益来源',
+                type:'pie',
+                radius : '55%',
+                center: ['50%', '60%'],
+                data:[
+                    {value:335, name:'工资'},
+                    {value:310, name:'余额宝'},
+                    {value:234, name:'股票'},
+                    {value:135, name:'基金'},
+                    {value:1548, name:'理财产品'}
+                ]
+            }
+        ]
+    };
+
+
+
+    // 为echarts对象加载数据
+    myChart.setOption(option);
+    window.onresize=function () {
+
+        $('#shouyi').css('width',$('.tab-content').width());
+        myChart.resize() //重置canvax的大小
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@baseColor: #00a8db;
+.el-header{
+	.container{
+		.navbar-right{
+			li{
+				@media all and (max-width: 768px){
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+.el-mainConnect{
+	// 左侧菜单
+	.col-sm-3{
+		@media all and (max-width:768px){
+			text-align: center;
+		}
+		>ul{
+			list-style: none;
+			border: 1px solid #eee;
+			border-radius: 5px;
+			margin-top: 10px;
+			padding-left: 0;
+			>li{
+				border-bottom: 1px solid #eee;
+				line-height: 45px;
+				text-indent: 1em;
+				background-color: rgb(245,245,245);
+				>ul{
+					list-style: none;
+					border-top: 1px solid #eee;
+					li{
+						background-color: #fff;
+						padding: 0;
+						text-indent: 4em;
+						@media all and (max-width:768px){
+							text-indent: 1em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 右侧主内容
+	.col-sm-9{
+		margin-top: 10px;
+		.panel-body{
+			width: 96%;
+			margin: 0 auto;
+			border-bottom: solid 1px #ccc;
+		}
+		.el-9-img{
+			border: 1px solid #ccc;
+			padding: 10px;
+			img{
+				width: 70px;
+			}
+		}
+		.el-9-content{
+			text-indent: 1em;
+		}
+
+		//金额面板
+		.m4{
+			width: 100%;
+			margin: 10px auto;
+			font-size: 18px;
+			.text-money{
+				color: @baseColor;
+			}
+		}
+		.mbtn2{
+			text-align: center;
+			margin: 40px auto;
+			a{
+				padding: 10px 15px;
+				font-size: 16px;
+			}
+		}
+
+		.el-certification{
+			width: 100%;
+			// height: 300px;
+			margin: 0 auto;
+			.col-sm-4{
+				margin-top: 5px;
+				.el-img{
+					float: left;
+					margin-top: 10px;
+				}
+				.el-text{
+					float: left;
+					margin-left: 10px;
+				}
+				.info{
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

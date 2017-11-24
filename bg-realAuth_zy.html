@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>实名认证管理</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <script src="lib/artTemplate/dist/template.js"></script>
+    <script src="scripts/serializeJSON.js"></script>
+    <script src="scripts/realAuth.js"></script>
+    <link rel="stylesheet" href="styles/css/bg-realAuth_zy.css">
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p>尊敬的 <span>小强</span> 你好 !</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="register_zy.html">注册</a></li>
+                <li><a href="login_zy.html">快速登录</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="index_withoutLogin_zy.html">操作员管理 <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体-->
+<main class="el-main">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">操作员管理
+             <button type="button" class="btn btn-success pull-right " data-toggle="modal" data-target="#add">添加</button>
+            </div>
+            <div class="panel-body">
+               <table class="table table-striped">
+                    <thead>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>所属部门</th>
+                        <th>工号</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody>
+                        <td>老李</td>
+                        <td>男</td>
+                        <td>后勤</td>
+                        <td>0001</td>
+                        <td>
+                            <button type="button" class="btn btn-info">修改</button>
+                            <button type="button" class="btn btn-danger">删除</button>
+                        </td>
+                    </tbody>
+            </table>
+            </div>
+        </div>
+
+
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">请填写您的真实信息</h4>
+            </div>
+            <div class="modal-body">
+                <form  id="myform" action="server/demo.json">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">姓名</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="username">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">性别</label>
+                        <select name="sex" class="form-control" id="exampleInputPassword2">
+                            <option value="1">男</option>
+                            <option value="0">女</option>
+                            <option value="2">其他</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword3">所属部门</label>
+                        <select name="department" class="form-control" id="exampleInputPassword3" >
+                            <option>ui</option>
+                            <option>前端</option>
+                            <option>后台</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail4">工号</label>
+                        <input type="text" class="form-control" id="exampleInputEmail4" name="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="save">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" >取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/html" id="tmpl">
+    {{each data as v i}}
+        <tr>
+            <td>{{v.username}}</td>
+            <td>{{v.sex}}</td>
+            <td>{{v.department}}</td>
+            <td>{{v.number}}</td>
+            <td>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#add">修改</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#add">删除</button>
+            </td>
+        </tr>
+    {{/each}}
+</script>
+<script>
+/*   $('#add').on('show.bs.modal', function (e) {
+       console.log(e.relatedTarget)
+  })*/
+
+
+
+</script>
+</body>
+</html>

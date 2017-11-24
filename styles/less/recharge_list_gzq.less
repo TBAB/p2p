@@ -1,0 +1,79 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@baseColor: #00a8db;
+.el-header{
+	.container{
+		.navbar-right{
+			li{
+				@media all and (max-width: 768px){
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+.el-mainConnect{
+	// 左侧菜单
+	.col-sm-3{
+		@media all and (max-width:768px){
+			text-align: center;
+		}
+		>ul{
+			list-style: none;
+			border: 1px solid #eee;
+			border-radius: 5px;
+			margin-top: 10px;
+			padding-left: 0;
+			>li{
+				border-bottom: 1px solid #eee;
+				line-height: 45px;
+				text-indent: 1em;
+				background-color: rgb(245,245,245);
+				>ul{
+					list-style: none;
+					border-top: 1px solid #eee;
+					li{
+						background-color: #fff;
+						padding: 0;
+						text-indent: 4em;
+						@media all and (max-width:768px){
+							text-indent: 1em;
+						}
+					}
+					.pay{
+						background-color: @baseColor;
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 右侧主内容
+	.col-sm-9{
+		margin-top: 10px;
+		.panel{
+			margin-bottom: 0px;
+			border: 1px solid #eee;
+			border-radius: 5px;
+		}
+		.pull-left{
+			line-height: 35px;
+		}
+		.table{
+			width: 100%;
+			.pay-sucess{
+				color: #272;
+			}
+		}
+	}
+}

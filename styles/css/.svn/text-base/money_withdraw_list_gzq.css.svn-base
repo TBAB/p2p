@@ -1,0 +1,66 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@media all and (max-width: 768px) {
+  .el-header .container .navbar-right li {
+    text-align: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .el-mainConnect .col-sm-3 {
+    text-align: center;
+  }
+}
+.el-mainConnect .col-sm-3 > ul {
+  list-style: none;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding-left: 0;
+}
+.el-mainConnect .col-sm-3 > ul > li {
+  border-bottom: 1px solid #eee;
+  line-height: 45px;
+  text-indent: 1em;
+  background-color: #f5f5f5;
+}
+.el-mainConnect .col-sm-3 > ul > li > ul {
+  list-style: none;
+  border-top: 1px solid #eee;
+}
+.el-mainConnect .col-sm-3 > ul > li > ul li {
+  background-color: #fff;
+  padding: 0;
+  text-indent: 4em;
+}
+@media all and (max-width: 768px) {
+  .el-mainConnect .col-sm-3 > ul > li > ul li {
+    text-indent: 1em;
+  }
+}
+.el-mainConnect .col-sm-3 > ul > li > ul .pay {
+  background-color: #00a8db;
+}
+.el-mainConnect .col-sm-3 > ul > li > ul .pay a {
+  color: #fff;
+}
+.el-mainConnect .col-sm-9 {
+  margin-top: 10px;
+}
+.el-mainConnect .col-sm-9 .panel {
+  margin-bottom: 0px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.el-mainConnect .col-sm-9 .pull-left {
+  line-height: 35px;
+}
+.el-mainConnect .col-sm-9 .table {
+  width: 100%;
+}
+.el-mainConnect .col-sm-9 .table .pay-sucess {
+  color: #272;
+}

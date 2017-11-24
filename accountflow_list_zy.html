@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>账户流水</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/public_offcanvas.js"></script>
+    <link rel="stylesheet" href="styles/css/accountflow_list_zy.css">
+
+</head>
+<body>
+    <!--顶部-->
+    <header class="el-header navbar navbar-default navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p>尊敬的 <span>小强</span> 你好 !</p>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                    <li><a href="register_zy.html">注册</a></li>
+                    <li><a href="login_zy.html">快速登录</a></li>
+                    <li><a href="#" >帮助</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </header>
+
+    <!--导航-->
+    <nav class="el-nav navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>-->
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" alt="">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li ><a href="index_withoutLogin_zy.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="invest_zy.html">我要投资</a></li>
+                    <li><a href="borrow_zy.html">我要借款</a></li>
+                    <li class="active"><a href="personal_zy.html">个人中心</a></li>
+                    <li><a href="#">新手指引</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--主体-->
+    <main class="el-main">
+        <div class="container">
+            <div class="row offcanvas  offcanvas-left">
+                <!--左边部分-->
+                <div class="col-sm-3 offcanvas-aside">
+                    <ul>
+                        <li><a href="">投资项目</a></li>
+                        <li>
+                            <a href="">借款项目</a>
+                            <ul class="leftNav">
+                                <li><a href="bid_request_list_zy.html">借款项目</a></li>
+                                <li><a href="">借款明细</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">我的账户</a>
+                            <ul class="leftNav">
+                                <li><a href="">账户信息</a></li>
+                                <li><a href="realAuth_zy.html">实名认证</a></li>
+                                <li><a href="">银行卡管理</a></li>
+                                <li><a href="">登录记录</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="select">
+                            <a href="">资产详情</a>
+                            <ul class="leftNav">
+                                <li class="point"><a href="">账户流水</a></li>
+                                <li><a href="">充值明细</a></li>
+                                <li><a href="">提现记录</a></li>
+                                <li><a href="">收款明细</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="userInfo_zy.html">个人资料</a></li>
+                    </ul>
+                </div>
+                <!--右边部分-->
+                <div class="col-sm-9 offcanvas-content">
+                    <button class="tab">
+                        <i class="fa fa-hand-o-right" ></i>
+                    </button>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">账户流水</div>
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th>发生额(¥)</th>
+                                    <th>账户余额(¥)</th>
+                                    <th>可用余额</th>
+                                    <th>冻结金额</th>
+                                    <th>发生时间</th>
+                                    <th>类型</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td>8.53</td>
+                                    <td>2,451.43</td>
+                                    <td>881.43</td>
+                                    <td>1,570.00</td>
+                                    <td>2017-05-20 16:02:34</td>
+                                    <td>收款</td>
+                                </tr>
+                                <tr>
+                                    <td>-0.05</td>
+                                    <td>2,442.90</td>
+                                    <td>872.90</td>
+                                    <td>1,570.00</td>
+                                    <td>2017-05-31 06:02:21</td>
+                                    <td>利息管理费</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--页脚-->
+    <footer class="el-footer container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 ">
+                    <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                    <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                    <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                    <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                    <p>
+                        <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                    </p>
+                </div>
+                <div class="col-sm-2 ">
+                    <p>&emsp;官方微博 :</p>
+                    <p><img src="images/sina.png" alt=""></p>
+                    <p><img src="images/tecent.png" alt=""></p>
+                </div>
+                <div class="col-sm-2 ">
+                    <p>&emsp;官方微信 :</p>
+                    <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+</body>
+</html>

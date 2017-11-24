@@ -1,0 +1,14 @@
+{
+  "name": "artTemplate",
+  "homepage": "https://github.com/aui/artTemplate",
+  "_release": "8673b4326f",
+  "_resolution": {
+    "type": "branch",
+    "branch": "3.1.0",
+    "commit": "8673b4326f6deff186f9dd4d13527e874625a99a"
+  },
+  "_source": "https://github.com/aui/artTemplate.git",
+  "_target": "3.1.0",
+  "_originalSource": "artTemplate",
+  "_direct": true
+}

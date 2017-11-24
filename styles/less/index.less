@@ -1,0 +1,153 @@
+@charset "utf-8";
+@baseColor: #00a8db;
+//Header
+.el-header{
+  .container{
+    .navbar-right{
+      li{
+        @media all and (max-width: 768px){
+          text-align: center;
+        }
+      }
+    }
+  }
+  
+  border-radius: 0px;
+  .navbar-brand{
+    color: #fff;
+    span{
+      font-size: 24px;
+      font-style: italic;
+    }
+    &:hover{
+      color: @baseColor;
+    }
+  }
+  .navbar-right li a{
+    &.el-username{  //一定要加&
+      color: @baseColor;
+    }
+    color: #fff;
+    &:hover{
+      color: @baseColor;
+    }
+  }
+
+}
+
+
+//导航
+.el-nav{
+  .navbar-brand{
+    padding-top: 10px;
+    img{
+        width: 80px;
+       } 
+    }
+}
+
+//正文
+.el-main{
+  //3大特色
+  .el-feature{
+    margin-top: 10px;
+    dl{
+      height: 65px;
+      padding-left: 80px;
+      dt{
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      dd{
+        color: lighten(#000,50%);
+      }
+    }
+    // 设置背景图
+    section:nth-child(1){
+      background-image: url("../../images/feature01.png");
+      background-repeat: no-repeat;
+    }
+    section:nth-child(2){
+      background-image: url("../../images/feature02.png");
+      background-repeat: no-repeat;
+    }
+    section:nth-child(3){
+      background-image: url("../../images/feature03.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  //进行中的借款
+  .el-borrow-list,.el-news{
+    margin-top: 10px;
+    //面板
+    .panel{
+      .panel-heading{
+        // border-bottom: 1px solid #eee;
+        padding-bottom: 0px;
+        .pull-left{
+          font-size: 24px;
+          color: @baseColor;
+          font-weight: bold;
+          border-bottom: 4px solid;
+        }
+
+        .pull-right{
+          color: @baseColor;
+          padding-top: 10px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    //借款内容
+    .panel-body{
+      ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            border-bottom: 1px dotted #eee;
+          a{
+            line-height: 35px;
+            &:hover span{
+            color: @baseColor;
+          }
+          }
+          span{
+            color: #555;
+            font-size: 14px;
+          }
+        }
+      }
+      thead{
+        th{
+          color: lighten(#000,50%);
+        }
+      }
+    }
+  }
+}
+
+//页脚
+.el-footer{
+  background-color: #eee;
+  padding: 10px;
+  @media all and (max-width:768px){
+    text-align: center;
+  }
+  img{
+    width: 140px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

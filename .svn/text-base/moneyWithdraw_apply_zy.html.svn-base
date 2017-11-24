@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>账户体现</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="styles/css/moneyWithdraw_apply_zy.css">
+</head>
+<body>
+<!--顶部-->
+<header class="el-header navbar navbar-default navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p>尊敬的 <span>小强</span> 你好 !</p>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index_withoutLogin_zy.html">首页</a></li>
+                <li><a href="register_zy.html">注册</a></li>
+                <li><a href="login_zy.html">快速登录</a></li>
+                <li><a href="#" >帮助</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</header>
+
+<!--导航-->
+<nav class="el-nav navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>-->
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" alt="">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <li ><a href="moneyWithdraw_apply_zy.html">账户体现 <span class="sr-only">(current)</span></a></li>
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--主体-->
+<main class="el-main">
+    <div class="container">
+        <div class="content">
+
+                <!--上-->
+                <div>
+                    <h3>账户提现</h3>
+                    <p>1. 本平台工作日会处理当天 17:00 之前的提款申请。</p>
+                    <p>2. 为了确保银行转账成功，请您确认银行账号信息的 正确性。</p>
+                    <p>3. 单笔提现范围-普通用户500.00 元 ~ 500000.00 元。</p>
+                    <p>4. 单笔提现范围-VIP用户500.00 元 ~ 500000.00 元。</p>
+                    <p>5. 目前提现服务费：1万元(含) 之内：2.00 元/笔；1万元（以上） ：5.00 元/笔。</p>
+                    <p>6. 为避免信用卡套现，故充值15日内未投资提现按提现金额的0.4%收取提现费用。</p>
+                    <p>7. 本次可提现 = 可用余额 - 净值保证金 - 不可提现金额 + 投标冻结 - 最高服务费 - 返还体验金</p>
+                </div>
+
+                <!--金额-->
+                <div class="row">
+                    <div class="col-sm-4">
+                        总金额： <span class="text-primary">10000元</span>
+                    </div>
+                    <div class="col-sm-4">
+                        可提现金额： <span class="text-primary">8000元</span>
+                    </div>
+                    <div class="col-sm-4">
+                        冻结金额： <span class="text-primary">10000元</span>
+                    </div>
+                </div>
+
+                <!--表单-->
+                <form class="form-horizontal" id="Form">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">借款期限</label>
+                        <div class="col-sm-3 ">
+                            <select class="form-control">
+                                <option>建设银行</option>
+                                <option>工商银行</option>
+                                <option>农业银行</option>
+                                <option>中国银行</option>
+                                <option>招商银行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail1" class="col-sm-2 control-label">开户银行</label>
+                        <div class="col-sm-3 ">
+                            <input type="text" name="bank" class="form-control" id="inputEmail1" placeholder="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail2" class="col-sm-2 control-label">银行卡号</label>
+                        <div class="col-sm-3 ">
+                            <input type="text" name="number" class="form-control" id="inputEmail2" placeholder="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">户主姓名</label>
+                        <div class="col-sm-3 ">
+                            <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail4" class="col-sm-2 control-label">提现金额</label>
+                        <div class="col-sm-3 ">
+                            <input type="text" name="money" class="form-control" id="inputEmail4" placeholder="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail5" class="col-sm-2 control-label">通知电话</label>
+                        <div class="col-sm-3 ">
+                            <input type="text" name="phone" class="form-control" id="inputEmail5" placeholder="">
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-xs-offset-4  col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-primary">确认提交</button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+
+
+        </div>
+    </div>
+    </div>
+</main>
+
+<!--页脚-->
+<footer class="el-footer container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 ">
+                <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+                <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
+                <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+                <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
+                <p>
+                    <a href="#">蜀ICP备14030149号-1</a> &emsp;&emsp; <a href="#">蜀公网安备510114990541</a>
+                </p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微博 :</p>
+                <p><img src="images/sina.png" alt=""></p>
+                <p><img src="images/tecent.png" alt=""></p>
+            </div>
+            <div class="col-sm-2 ">
+                <p>&emsp;官方微信 :</p>
+                <p><img id="weixin" src="images/wx.jpg" alt=""></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</footer>
+
+<script type="text/javascript">
+
+    <!--表单验证-->
+    $(document).ready(function() {
+        $('#Form')
+            .bootstrapValidator({
+
+                feedbackIcons: {
+                    valid: 'glyphicon glyphicon-ok',
+                    invalid: 'glyphicon glyphicon-remove',
+                    validating: 'glyphicon glyphicon-refresh'
+                },
+                fields: {
+
+                    bank: {
+                        validators: {
+                            notEmpty: {
+                                message: "开户行不能为空!"
+                            }
+                        }
+                    },
+
+                    number: {
+                        validators: {
+                            notEmpty: {
+                                message: '卡号不能为空!'
+                            }
+                        }
+                    },
+
+
+
+                    name: {
+                        validators: {
+                            notEmpty: {
+                                message: '户主姓名不能为空!'
+                            }
+                        }
+                    },
+                    money: {
+                        validators: {
+                            notEmpty: {
+                                message: '提现金额不能为空!'
+                            }
+                        }
+                    },
+                    phone: {
+                        validators: {
+                            notEmpty: {
+                                message: '联系电话不能为空!'
+                            }
+                        }
+                    }
+
+                }
+            })
+            .on('success.form.bv', function(e) {
+                // Prevent form submission
+                e.preventDefault();
+
+                // Get the form instance
+                var $form = $(e.target);
+
+                // Get the BootstrapValidator instance
+                var bv = $form.data('bootstrapValidator');
+
+                // Use Ajax to submit form data
+                $.post($form.attr('action'), $form.serialize(), function(result) {
+                    console.log(result);
+                }, 'json');
+            });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>信用借款BIG</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <link rel="stylesheet" href="styles/css/borrow_apply2_zy.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <!--上-->
+                <div>
+                    <h3>借用贷款</h3>
+                    <p>
+                        <span class="text-info">授信额度：</span>
+                        <span class="text-danger">2000 </span>&emsp;&emsp;
+                        <span class="text-info">可借金额：</span>
+                        <span class="text-danger">2000</span>
+                    </p>
+                </div>
+
+                <!--标题-->
+                <div>
+                    <h3>借款信息 <span class="label label-primary">信用标</span></h3>
+                </div>
+
+                <form class="form-horizontal" id="Form">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">借款金额</label>
+                        <div class="col-sm-3 input-group">
+                            <input type="text" name="sum" class="form-control" id="inputEmail3" placeholder="">
+                            <span class="input-group-addon">元</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail5" class="col-sm-3 control-label">借款利息</label>
+                        <div class="col-sm-3 input-group">
+                            <input type="text" name="interest" class="form-control" id="inputEmail5" placeholder="">
+                            <span class="input-group-addon">%</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">借款期限</label>
+                        <div class="col-sm-3 input-group">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>3</option>
+                                <option>6</option>
+                                <option>9</option>
+                                <option>12</option>
+                                <option>24</option>
+                            </select>
+                            <span class="input-group-addon">月</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">还款方式</label>
+                        <div class="col-sm-3">
+                            <div class="radio-inline">
+                                <label class="radio-inline">
+                                    <input type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    按月分期
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    按月到期
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmai2" class="col-sm-3 control-label">最小投标</label>
+                        <div class="col-sm-3 input-group">
+                            <input type="text" name="minMoney" class="form-control" id="inputEmai2" placeholder="">
+                            <span class="input-group-addon">元</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmai5" class="col-sm-3 control-label">投标奖金</label>
+                        <div class="col-sm-3 input-group">
+                            <input type="text" name="bonus" class="form-control" id="inputEmai5" placeholder="">
+                            <span class="input-group-addon">%</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">招标天数</label>
+                        <div class="col-sm-3 input-group">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                            </select>
+                            <span class="input-group-addon">月</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword3"  class="col-sm-3 control-label">借款标题</label>
+                        <div class="col-sm-6">
+                            <input type="text" name="title" class="form-control" id="inputPassword3" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputPassword2"  class="col-sm-3 control-label">借款描述</label>
+                        <div class="col-sm-6">
+                            <textarea id="inputPassword2" name="particulars" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-offset-4  col-sm-offset-4 col-sm-8">
+                            <button type="submit" class="btn btn-primary">保存数据</button>
+                        </div>
+                    </div>
+
+                    <!--相关费用-->
+                    <div class="col-sm-4 expenses">
+                        <h4>相关费用</h4>
+                        <p>
+                            <span class="text-info">利息</span>
+                            <span class="el-borrow-cost" id="cost01">-sssss-</span>
+                        </p>
+                        <p>
+                            <span class="text-info">奖金</span>
+                            <span class="el-borrow-cost" id="cost02">--</span>
+                        </p>
+                        <p>
+                            <span class="text-info">管理费</span>
+                            <span class="el-borrow-cost" id="cost03">--</span>
+                        </p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+
+        <!--表单验证-->
+        $(document).ready(function() {
+            $('#Form')
+                .bootstrapValidator({
+
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+
+                        sum: {
+                            validators: {
+                                notEmpty: {
+                                    message: " "
+                                }
+                            }
+                        },
+
+                        interest: {
+                            validators: {
+                                notEmpty: {
+                                    message: ' '
+                                }
+                            }
+                        },
+
+
+
+                        minMoney: {
+                            validators: {
+                                notEmpty: {
+                                    message: ' '
+                                }
+                            }
+                        },
+                        bonus: {
+                            validators: {
+                                notEmpty: {
+                                    message: ' '
+                                }
+                            }
+                        },
+                        title: {
+                            validators: {
+                                notEmpty: {
+                                    message: '借款标题不能为空'
+                                }
+                            }
+                        },
+
+                        particulars : {
+                            validators: {
+                                notEmpty: {
+                                    message: '借款详情不能为空'
+                                },
+
+                                stringLength: {
+                                    min: 10,
+                                    message: '请精确的描述(最少10个字符)'
+                                }
+                            }
+                        },
+                    }
+                })
+                .on('success.form.bv', function(e) {
+                    // Prevent form submission
+                    e.preventDefault();
+
+                    // Get the form instance
+                    var $form = $(e.target);
+
+                    // Get the BootstrapValidator instance
+                    var bv = $form.data('bootstrapValidator');
+
+                    // Use Ajax to submit form data
+                    $.post($form.attr('action'), $form.serialize(), function(result) {
+                        console.log(result);
+                    }, 'json');
+                });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+
+.bold{
+  font-weight: bold;
+}
+
+
+//头部
+.el-header{
+  border-radius: 0px;
+  margin-bottom:0px;
+  .container{
+    .navbar-header{
+      a{
+        color: #ffffff;
+        i{
+          font-size: 18px;
+        }
+        span{
+          font-size: 24px;
+          font-style: italic;
+        }
+      }
+      p{
+        font-size: 20px;
+        color: #eeeeee;
+        margin-bottom: 0px;
+        height: 50px;
+        line-height: 50px;
+        span{
+          color: #10adff;
+        }
+      };
+
+    }
+    .collapse{
+      .navbar-nav{
+        li{
+          a{
+            color: #ffffff;
+            &:hover{
+              color: #10adff;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+}
+
+//导航
+.el-nav{
+  margin-bottom: 0px;
+  .container{
+    .navbar-header{
+      .navbar-brand{
+        display: inline-block;
+        padding-top: 22px;
+        height: 80px;
+      }
+      .navbar-brand>img{
+        width: 80px;
+      }
+    }
+
+    .navbar-collapse{
+      .navbar-nav{
+        li{
+          min-width: 80px;
+
+          a{
+            height: 80px;
+            line-height: 80px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            font-size: 18px;
+            text-align: center;
+            &:hover{
+              color: #0a91ff;
+              background-color: #e8e8e8;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+
+//主体
+.el-main{
+  margin-top: 10px;
+  .container{
+    .row{
+      //左边导航
+      .col-sm-3{
+        ul{
+          padding-left: 0px;
+          list-style: none;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          li{
+
+            line-height: 44px;
+            border-bottom: 1px solid #ccc;
+            background-color: #f6f6f6;
+
+            a{
+              padding: 5px 10px;
+              &:hover{
+                text-decoration: none;
+              }
+            }
+            .leftNav{
+              width:100%;
+              background-color: #fff;
+              border: none;
+              border-top: 1px solid #ccc;
+              border-radius: 0px;
+              .point{
+                background-color:#10adff;
+                a{
+                  color: #fff;
+                }
+              }
+              li{
+                background-color: #fff;
+                padding-left: 40px;
+                border: none;
+                &:hover{
+                  background-color:#10adff ;
+
+                }
+              }
+            }
+
+          }
+          li:last-of-type{
+            border-bottom: none;
+          }
+        }
+        &>ul{
+          &>.select {
+            background-color: #337AB7;
+            a{
+              color: #fff;
+              &:hover{
+                color: #337ab7;
+              }
+            }
+          }
+        }
+      }
+
+      //右边内容
+      .col-sm-9{
+        .panel{
+          .panel-body{
+            padding: 0px;
+            .form-group{
+              margin:0px;
+              margin-bottom: 10px;
+
+              label{
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                padding-top: 0px;
+                padding-left: 10px;
+                padding-right: 0px;
+              }
+              div{
+                p{
+                  padding: 0px;
+                  margin-top: 10px;
+                  padding-left: 10px;
+                }
+              }
+            }
+            margin-bottom: 20px;
+          }
+        }
+      textarea{
+        resize: none;
+      }
+      }
+
+    }
+  }
+
+}
+
+//页脚
+.el-footer{
+  padding-top: 30px;
+  padding-right: 0px;
+  padding-left: 0px;
+  background-color: #f8f8f8;
+  .row{
+    .col-sm-8{
+      padding-right: 0px;
+      p{
+        height: 20px;
+        line-height: 20px;
+        margin-bottom: 25px;
+      };
+    }
+
+    .col-sm-2{
+      padding-right: 0px;
+      p{
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+    img{
+      width: 140px;
+      height: 70px;
+    }
+    #weixin{
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+}

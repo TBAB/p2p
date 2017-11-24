@@ -1,0 +1,30 @@
+/**
+ * Created by zhaoyang on 2017/11/6.
+ */
+
+// 获取表单的值
+$(function () {
+    $('#save').on('click',function () {
+        var param=$('#myform').serializeJSON()
+        console.log(param);
+
+        // 发送一个请求
+        $.post('server/demo.json',param,function (data) {
+                if(data){
+                    console.log(data);
+                    $('#add').modal('hide');
+                   var htmls= load(data);
+                   $(".table-striped").find('tbody').html(htmls)
+                }else {
+                    console.log(data)
+                }
+        },'json')
+    });
+
+    function load(datas) {
+        console.log(datas);
+       var html= template('tmpl',{data:datas});
+       return html
+    }
+})
+
